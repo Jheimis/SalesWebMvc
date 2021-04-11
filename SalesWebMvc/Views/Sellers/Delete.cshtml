@@ -12,25 +12,29 @@
     <h4>Seller</h4>
     <hr />
     <dl>
-        <dt @Html.DisplayNameFor(model => model.Name)
+        <dt>
+            @Html.DisplayNameFor(model => model.Name)
         </dt>
         <dd>
             @Html.DisplayFor(model => model.Name)
         </dd>
 
-        <dt @Html.DisplayNameFor(model => model.Email)
+        <dt>
+            @Html.DisplayNameFor(model => model.Email)
         </dt>
         <dd>
             @Html.DisplayFor(model => model.Email)
         </dd>
 
-        <dt @Html.DisplayNameFor(model => model.BirthDate)
+        <dt>
+            @Html.DisplayNameFor(model => model.BirthDate)
         </dt>
         <dd>
             @Html.DisplayFor(model => model.BirthDate)
         </dd>
 
-        <dt @Html.DisplayNameFor(model => model.BaseSalary)
+        <dt>
+            @Html.DisplayNameFor(model => model.BaseSalary)
         </dt>
         <dd>
             @Html.DisplayFor(model => model.BaseSalary)
@@ -38,8 +42,8 @@
     </dl>
 
     <form asp-action="Delete">
-        <input type="hidden" asp-for="Id"/>
-        <input type ="submit" value="Delete" class="btn btn-danger" />
+        <input type="hidden" asp-for="Id" />
+        <input type="submit" value="Delete" class="btn btn-danger" />
         <a asp-action="Index">Back to List</a>
     </form>
 </div>
